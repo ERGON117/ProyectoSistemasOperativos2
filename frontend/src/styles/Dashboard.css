@@ -1,0 +1,51 @@
+.dashboard-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #667eea;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.user-info {
+  font-weight: bold;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  background: #f0f2f5;
+  padding: 0.5rem;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  margin: 0 5px;
+}
+
+.tab.active {
+  background: #667eea;
+  color: #fff;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  border-radius: 0 6px 6px 6px;
+  padding: 1rem;
+  background: #fff;
+  max-height: 500px;   /* 🔹 altura máxima para evitar que tape las pestañas */
+  overflow-y: auto;    /* 🔹 scroll interno cuando crece la lista */
+}
